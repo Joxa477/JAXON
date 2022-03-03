@@ -1,0 +1,34 @@
+*{
+  margin: 0  ;
+  padding: 0  ;
+  box-sizing: border-box ;
+}
+body{
+  display: flex ;
+  align-items: center ;
+  justify-content: center ;
+  height: 100vh ;
+}
+h1{
+  text-transform: uppercase;
+  font-size: 150px ;
+  color: rgb(156, 147, 147);
+  position: relative;
+}
+h1::before{
+  content: "shohjahon";
+  color: black;
+  position: absolute;
+  overflow: hidden;
+  width: 0%;
+  animation: all 2s;
+}
+h1:hover::before{
+  width: 100%;
+}
+h1{
+  &:last-child {
+    color: white;
+    color: yellow;
+  }
+}
